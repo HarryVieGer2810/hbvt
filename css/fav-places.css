@@ -2,6 +2,7 @@
     width: 100%;
     padding: 80px 0;
     background-color: var(--secondary-color);
+    overflow: hidden;
 }
 
 .places img {
@@ -39,6 +40,7 @@
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
+    flex-wrap: wrap;
 }
 
 .places-content button {
@@ -65,6 +67,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .places-content p {
+        text-align: center;
     }
 }
 
@@ -106,6 +112,7 @@
 .hanoi-content p {
     margin-bottom: 10px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .hanoi-content button {
