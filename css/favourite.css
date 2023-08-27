@@ -1,0 +1,101 @@
+.fav {
+    color: var(--primary-text-color);
+    padding: 100px 0;
+}
+
+.fav-container {
+    max-width: 1300px;
+    padding: 0 45px;
+    margin: auto;
+}
+
+.fav-container h1 {
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.fav-container h1::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fav-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fav-card {
+    padding: 50px 25px;
+    width: calc(30% - 20px);
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.fav-card:hover {
+    background-color: var(--secondary-text-color);
+}
+
+.fav-box {
+    transition: all 0.2s ease-in-out;
+}
+
+.fav-card:hover .fav-box {
+    transform: scale(1.05);
+}
+
+.fav-box i {
+    font-size: 50px;
+    transition: 0.3s ease-in-out;
+    color: #C21E56;
+}
+
+.fav-box h3 {
+    font-size: 25px;
+    color: #C21E56;
+    padding: 10px 0 7px;
+}
+
+.fav-btn {
+    margin-top: 10px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid var(--primary-text-color);
+}
+
+.fav-btn button {
+    color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 1200px) {
+    .fav-container {
+        padding: 0 25px;
+    }
+
+    .fav-card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .fav-card {
+        width: 100%;
+    }
+}
